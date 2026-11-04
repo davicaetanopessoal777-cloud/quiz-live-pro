@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080d1d">
+<title>Quiz Live PRO</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">Q</span><div><b>QUIZ LIVE <em>PRO</em></b><small>DESAFIO AO VIVO</small></div></div>
+    <div class="live-state"><i></i><span id="connection">CONECTANDO</span></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="round-meta"><span id="roundLabel">RODADA 01</span><span class="dot">•</span><span id="categoryLabel">ANIMAIS</span></div>
+      <div class="challenge">
+        <div class="letter-wrap"><small>SUA LETRA</small><strong id="letter">A</strong></div>
+        <div class="challenge-copy"><span>DESAFIO DA RODADA</span><h1 id="prompt">Fale um animal com A</h1><p>Comente sua resposta no chat para pontuar.</p></div>
+        <div class="timer"><svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="43"/><circle id="timerArc" class="arc" cx="50" cy="50" r="43"/></svg><b id="timer">30</b><small>SEG</small></div>
+      </div>
+      <div class="progress"><span id="progressBar"></span></div>
+      <div class="progress-caption"><span>RESPOSTAS VÁLIDAS</span><b id="answerCount">0</b></div>
+    </section>
+
+    <section class="content-grid">
+      <div class="main-column">
+        <div class="section-head"><div><small>AO VIVO AGORA</small><h2>Respostas da galera</h2></div><span class="counter" id="playerCount">0 JOGADORES</span></div>
+        <div id="answers" class="answers"><div class="empty"><span>✦</span><b>Aguardando as primeiras respostas...</b><small>Participe pelo chat da live!</small></div></div>
+        <div class="feed-panel"><div class="feed-title"><span class="pulse"></span> ATIVIDADE RECENTE</div><div id="feed" class="feed"><p>O jogo está pronto para receber eventos.</p></div></div>
+      </div>
+
+      <aside class="side-column">
+        <div class="ranking-panel"><div class="section-head"><div><small>PLACAR DA LIVE</small><h2>Top jogadores</h2></div><span class="trophy">♛</span></div><div id="ranking" class="ranking"><p class="muted">O ranking aparece quando chegarem jogadores.</p></div></div>
+        <div class="gift-panel"><div class="gift-icon">✦</div><div><b>Presentes especiais</b><p>Eventos de presentes podem ativar bônus e efeitos no jogo.</p></div></div>
+      </aside>
+    </section>
+  </main>
+  <footer><span>QUIZ LIVE PRO</span><span>JOGUE • COMENTE • SUBA NO RANKING</span></footer>
+</div>
+<script src="/game.js"></script>
+</body>
+</html>

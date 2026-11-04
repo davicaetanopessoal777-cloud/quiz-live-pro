@@ -1,0 +1,14 @@
+{
+  "name": "quiz-live-pro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Jogo de live com tela automática e servidor de eventos em tempo real",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}
